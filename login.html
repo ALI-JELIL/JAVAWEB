@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+	<title>Java Web</title>
+
+<script language="javascript">
+function checkvalid2()
+{
+var strmg=login.uid.value;
+var pass=login.pwd.value;
+if(strmg=="" ||  pass=="")
+{
+alert("用户名或密码为空！请输入用户名和密码...");
+//login.pwd.value=" ";
+return false;
+}
+else
+return true;
+}
+</script>
+</head>
+
+<body bgcolor="#66CCFF"> <!--background="login.gif" -->
+<center>
+<h2>系统登陆</h2>	
+	<form  name="login" action="login.jsp" method="post" >
+用&nbsp;户&nbsp;名：<Input type="text" name="uid" maxlength=8 style="width:150"  onchange="checkvalid2()"  placeholder="请输入用户名?"  requird="required">*<br>
+密&nbsp;&nbsp;&nbsp;码：<Input type="password" name="pwd" maxlength=8 onChange="checkvalid2()" class="textbox" id="password"
+		 size="12" oncopy="return false" oncut="return false" onpaste="return false"  placeholder="请输入密码?"  style="font-family:Wingdings;width:150">*<br>
+		 
+		 
+		 
+<input id="checkSave" type="checkbox" name="checkbox">是否保存密码<br>
+ <Input type="submit" value="登陆" onClick="return checkvalid2()">
+ <Input type="reset" value="取消">
+	</form>
+	</center>	
+</body>
+</html>
