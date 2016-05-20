@@ -17,7 +17,6 @@
 	String usr[]={"a","b","c"};
 	String passs[]={"123","123","123"};
 	for(int i=0;i<3;i++)
-	{
     //if("sa".equals(uid) && "123".equals(pwd)) 
 	if(usr[i].equals(uid) && passs[i].equals(pwd))
     {
@@ -29,6 +28,6 @@
     else 
     {
 	 out.println("用户名或密码输入错误！");
+	 break;
     }
-	}
 %>
