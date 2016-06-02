@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+	<link type="text/css" rel="stylesheet" href="css/login.css"/>
 	<title>Java Web</title>
 	<script language="javascript">
 function checkvalid2()
@@ -20,19 +21,17 @@ return true;
 </head>
 
 
-<body bgcolor="#66CCFF" >
-<!--<img src="bg.jpg" border="0" width="1024" height="766"/>-->
-	<!--background="login.gif" -->
+<body bgcolor="#66CCFF" id="body">
 	<center>
 		<h2>系统登录</h2>
-		<form  name="login" action="login.jsp" method="post" >
+		<form  name="login" action="login2.jsp" method="post" >
 			用&nbsp;户&nbsp;名
 			<Input type="text" name="uid" maxlength=8 style="width:150"  onchange="checkvalid2()"  placeholder="请输入用户名"  requird="required">
 			*
 			<br>
 			密&nbsp;&nbsp;&nbsp;码
-			<Input type="password" name="pwd" maxlength=8 onChange="checkvalid2()" class="textbox" id="password"
-		 size="12"  oncopy="return false"  oncut="return false" onpaste="return false"  placeholder="请输入密码"  style="font-family:Wingdings;width:150">
+			<Input type="password" name="pwd" id="password" maxlength=8  onChange="checkvalid2()"  class="textbox" 
+		    size="12"  oncopy="return false"  oncut="return false" onpaste="return false"  placeholder="请输入密码"  style="font-family:Wingdings;width:150">
 			*
              <br>
 
@@ -40,8 +39,7 @@ return true;
 			是否保存密码
 			<br/>
 			<Input type="submit" value="登录" onClick="return checkvalid2()">
-			<Input type="reset" value="取消"></form>
-			<h5>用户名：a,b,c  密码：123,123,123</h5>
+			<Input type="reset" value="取消"></form>	
 	</center>
 </body>
 </html>
