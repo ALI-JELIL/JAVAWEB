@@ -1,15 +1,11 @@
-<%@ page contentType="text/html;charset=GB2312"%>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <%@ page import="java.sql.*"%>
 <html>
 <head>
-	<title>Java Web</title>
-
+	<title>用户登录</title>
 </head>
-
-<body>
-     
-	<%
-       
+<body>  
+	<%   
    Connection conn=null;
     try
     {

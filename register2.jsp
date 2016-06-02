@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=utf-8"%>
 <%@ page import="java.sql.*"%>
 <html>
 <head>
@@ -20,12 +20,14 @@
       st.setString(2,pwd);
      
        int count=st.executeUpdate();       
-      out.println("影响数据的行数"+count);
+      out.println("用户注册成功!  5秒钟后给你自动跳转到用户登录界面。。。");
+      response.setHeader("Refresh","5;URL=login.html");
    }
   catch(Exception e)
   {
-    out.println("用户名已被注册，请尝试其他用户名。。。");
+    out.println("用户注册时出现如下错误。。。");
      out.println(e.getMessage());
+     //response.setHeader("Refresh","7;URL=login.html");
    }
    finally
   {

@@ -1,0 +1,70 @@
+﻿/*用户登录界面，用户注册界面*/
+body{
+	margin:0px auto;  /*各边距离为0，自定居中*/
+	width:595px;
+	height:448px;
+	text-align:center;   /*文字居中*/
+	background-color:#1B7FBB;  /*窗口背景颜色*/
+}
+.one{
+	position:absolute; /*位置采用绝对定位*/
+	margin-top:100px;  /*与顶部距离100px*/
+	width:595px;
+	height:448px;
+	background:url(../pic/login.jpg) no-repeat center; /*设置背景图片，图片不重复*/
+	background-position:center center; /*背景位于窗口中间*/
+	/*background-color: red;*/
+}
+.onee{
+	position:absolute;
+	margin-top:100px;
+	width:595px;
+	height:448px;
+	background:url(../pic/register.jpg) no-repeat center;
+	background-position:center center;
+	/*background-color: red;*/
+}
+
+input{
+	width:150px;
+	height:18px;
+	border-left:100px;  /*左边距离100px*/
+	border-top:100px;   /*顶部距离100px*/
+	border-right:0;     /*右边距离100px*/
+	border-bottom:1px #CCCCCC solid;  /*底边距离100px 字体颜色浅灰色 粗体*/
+	background:#6BACCC;
+}
+.two{
+	margin-top:200px;
+	margin-left:200px;
+	font-family:"楷体";
+	font-size:16px;
+	color:#0000FF;
+}
+#pic{
+	border:0;
+	background:url(../pic/bg1.png);
+	width:33px;
+	height: 33px;
+	background-position:center center;
+}
+.three{
+	margin-right:15px;
+}
+#pic2{
+	border:0;
+	background:url(../pic/bg2.png);
+	width:33px;
+	height: 33px;
+	background-position:center center;
+}
+.four{
+	margin-right:90px;
+}
+#pic3{
+	border:0;
+	background:url(../pic/bt.jpg);
+	width:39px;
+	height: 25px;
+	background-position:center center;
+}

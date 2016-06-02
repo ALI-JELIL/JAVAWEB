@@ -1,51 +1,49 @@
-
+<!DOCTYPE html >
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>ÓÃ»§×¢²áÒ³Ãæ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="css/in.css"/>
+<title>ç”¨æˆ·æ³¨å†Œç•Œé¢</title>
 
 <script language="javascript">
 function checkvalid2()
 {
 var strmg=register.username.value;
-var pass=register.pwd.value;
+var pass=register.password.value;
 if(strmg=="" ||  pass=="")
 {
-alert("ÓÃ»§Ãû»òÃÜÂëÎª¿Õ£¡ÇëÊäÈëÓÃ»§ÃûºÍÃÜÂë...");
+alert("ç”¨æˆ·åæˆ–å¯†ç ä¸ºç©º,è¯·è¾“å…¥ç”¨æˆ·åå’Œå¯†ç ...");
 //login.pwd.value=" ";
 return false;
 }
 else
 return true;
 }
-
-function check()
-{
-var pass=register.pwd.value;
-var pass2=register.pwd2.value;
-if(pass!=pass2)
-{
-alert("Á½´ÎÊäÈëÃÜÂë²»Í¬£¡ÇëÖØĞÂÊäÈë...");
-//login.pwd.value=" ";
-return false;
-}
-else
-return true;
-}
-
 
 </script>
 </head>
 
-<body bgcolor="#66CCFF">
-<center>
-<form  name="register" action="register.jsp" method="post">
-<h3 align="center"> ÓÃ»§×¢²á</h3>
-ÓÃ&nbsp;»§&nbsp;Ãû£º<Input type="text" name="username" size="12" style="width:150" onChange="checkvalid2()"><br>
-ÃÜ&nbsp;&nbsp;&nbsp;Âë£º<Input type="password" name="pwd" maxlength=8 size="12" style="width:150" onChange="checkvalid2()"  ><br>
-È·&nbsp;ÈÏÃÜÂë£º<Input type="password" name="pwd2" maxlength=8 size="12" style="width:150" onChange="checkvalid2()" ><br>
-<Input type="submit"  value="µÇÂ½" onClick="return check()">
-<Input type="reset" value="È¡Ïû">
-</form>
-</center>
+<body>
+<div class="onee" >
+<form name="register" action="register2.jsp" method="post" >
+	<div class="two" >
+		<div>
+			æ˜µç§°ï¼š<input type="text"  name="username"  id="username"  autocomplete="off" oncopy="return false"  
+			oncut="return false" onpaste="return false" placeholder="è¯·è¾“å…¥æ˜µç§°" />
+		</div>
+		<div>
+			å¯†ç ï¼š<input type="password" name="password" id="password"  autocomplete="off" oncopy="return false"  
+			oncut="return false" onpaste="return false"  maxlength=8  placeholder="è¯·è¾“å…¥å¯†ç "/>
+		</div>
+	
+		<div class="four">
+			<input id="pic3" type="submit" value="" onClick="return checkvalid2()"/>
+		</div>
+	</div>
+	</form>
+</div>
+
+
 </body>
 </html>
+

@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
-	<link type="text/css" rel="stylesheet" href="css/login.css"/>
+	<link type="text/css" rel="stylesheet" href="css/in.css"/>
 	<title>Java Web</title>
 	<script language="javascript">
 function checkvalid2()
@@ -20,26 +20,27 @@ return true;
 </script>
 </head>
 
-
-<body bgcolor="#66CCFF" id="body">
-	<center>
-		<h2>系统登录</h2>
+<body>
+	<div class="one" >
+		
 		<form  name="login" action="login2.jsp" method="post" >
-			用&nbsp;户&nbsp;名
-			<Input type="text" name="uid" maxlength=8 style="width:150"  onchange="checkvalid2()"  placeholder="请输入用户名"  requird="required">
-			*
-			<br>
-			密&nbsp;&nbsp;&nbsp;码
-			<Input type="password" name="pwd" id="password" maxlength=8  onChange="checkvalid2()"  class="textbox" 
-		    size="12"  oncopy="return false"  oncut="return false" onpaste="return false"  placeholder="请输入密码"  style="font-family:Wingdings;width:150">
-			*
-             <br>
 
-			<input id="checkSave" type="checkbox" name="checkbox">
-			是否保存密码
-			<br/>
-			<Input type="submit" value="登录" onClick="return checkvalid2()">
-			<Input type="reset" value="取消"></form>	
-	</center>
+			<div class="two" >
+				<div>
+					昵称：<input type="text"  name="uid"  id="input1"  placeholder="请输入昵称" autocomplete="off" 
+					  requird="required"/>
+				</div>
+
+				<div>
+					密码：<input type="password" name="pwd" id="input2"  maxlength=8  oncopy="return false"  oncut="return false" onpaste="return false"  autocomplete="off"  placeholder="请输入密码" style="font-family:Wingdings;width:150" />
+				</div>
+
+				<div class="three">
+					<input id="pic" type="submit" value="" onClick="return checkvalid2()"/>
+					<input id="pic2" type="submit" value="" onClick="return checkvalid2()"/>
+				</div>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
